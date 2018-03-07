@@ -45,8 +45,6 @@ for(let i=0; i<service.length; i++){
         if(delay >= 400){
             delay = 0;
         }
-
-        console.log(delay);
     }, {offset: '60%'})
 }
 
@@ -71,10 +69,25 @@ var delay3 =0;
 for(let i=0; i<work.length; i++){
         $(work[i]).waypoint(function(){
         delay += 100;
-        $(work[i]).css('animation', 'fadeup 800ms ease-in-out '+delay+'ms forwards')
+        $(work[i]).css('animation', 'fadeup 800ms ease-in-out '+delay+'ms forwards');
         if(delay >= 300){
             delay = 0;
         }
 
+        setTimeout(function(){
+
+        },300);
+
     }, {offset: '50%'})
+}
+
+
+var work2 = $('.screenie');
+
+for(let i=0; i<work2.length; i++){
+    $(work2[i]).hover(function() {
+        $(work2[i]).css('transform', 'rotate(20deg)');
+    }, function() {
+        $(work2[i]).css('transform', 'rotate(0deg)');
+    });
 }
