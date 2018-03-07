@@ -74,9 +74,5 @@ for(let i=0; i<work.length; i++){
             delay = 0;
         }
 
-        setTimeout(function(){
-
-        },300);
-
     }, {offset: '50%'})
 }

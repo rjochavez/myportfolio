@@ -39,20 +39,6 @@
 	}
 }
 
-@keyframes turn{
-	0%{
-		transform: rotate(0deg);
-	}
-
-	50%{
-		transform:rotate(10deg);
-	}
-
-	100%{
-		transform:rotate(0deg);
-	}
-}
-
 
 @keyframes fadein{
 	0%{
@@ -356,6 +342,7 @@
 	transform: translateY(0);
 	opacity: 0;
 }
+
 
 .see-more{
 	text-decoration: none;
