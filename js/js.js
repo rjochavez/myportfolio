@@ -80,14 +80,3 @@ for(let i=0; i<work.length; i++){
 
     }, {offset: '50%'})
 }
-
-
-var work2 = $('.screenie');
-
-for(let i=0; i<work2.length; i++){
-    $(work2[i]).hover(function() {
-        $(work2[i]).css('transform', 'rotate(20deg)');
-    }, function() {
-        $(work2[i]).css('transform', 'rotate(0deg)');
-    });
-}
